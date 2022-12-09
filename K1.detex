@@ -1,0 +1,131 @@
+Praktikum der physikalischen Chemie
+K1 - Aktivierungsenergie der Inversion von Rohrzucker
+Janosch Ehlers (jaeh@uni-bremen.de)
+Samed Hür (huer@uni-bremen.de)
+Betreuerin: Petra Martinovic (p.martinovic@uni-bremen.de)
+25.11.2022
+
+Ziel des Versuches ist es, die Reaktionsgeschwindigkeitskonstante und die molare Aktivierungsenergie von der Inversionsreaktion von Rohrzucker (Saccharose) zu bestimmen. 
+Mithilfe einer polarimetrischen Messung zur Bestimmung des Drehwinkels. 
+
+Theoretischer Hintergrund
+Die Inversionsreaktion von Rohrzucker (Saccharose) wird durch ein Proton katalysiert. 
+Saccharose wird zu Glukose und Fruktose umgesetzt. 
+
+Die Mischung aus Fruktose und Glukose wird als Invertzucker bezeichnet. 
+Saccharose und der Invertzucker sind optisch aktiv. 
+Die äquimolare Mischung von Fruktose und Glukose hat in Summe einen kleineren Drehwinkel als die Saccharose. 
+So kann der Reaktionsfortschritt anhand der Verkleinerung des Drehwinkels der Lösung betrachtet werden. 
+Saccharose dreht die Ebene nach rechts (positiv) und der Invertzucker nach links (negativ). 
+Beim arbeiten mit einer verdünnten wässrigen Lösung kann das Wasser als konstant angesehen werden.
+Die Reaktionsgeschwindigkeit lässt sich mit der Gleichung berechnen. 
+Der linke Term wird in Abhängigkeit von der Zeit dargestellt.
+Die Steigung einer Ausgleichsgerade gibt dann Die Reaktionsgeschwindigkeitskonstante.
+
+Der Fehler dieser Darstellung lässt sich über die Gleichung berechnen.
+
+Nach dem Arrhenius-Gesetz lässt sich aus der Änderung der Geschwindigkeitskonstante , mit der Temperatur die Aktivierungsenergie berechnen, mit:
+
+In der Darstellung werden dann, die Fehlerkreuze benötigt.
+Diese werden über die Gleichungen und berechnet.
+
+Der Fehler für die Aktivierungsenergie und der Geschwindigkeitskonstante wird graphisch ermittelt über die Auswertung der Fehlerkreuze. 
+Zur Bestimmung der Fehler werden jeweils zwei Extremgeraden eingezeichnet, welche jeweils durch der Fehlerboxen verläuft.
+Außerdem wird mit der Gleichung ermittelt.
+
+Die Fehler der Halbwertzeiten folgen aus der Fehlerfortpflanzung nach Gleichung 
+
+Durchführung
+Der Thermostat war schon vor dem Versuch eingeschaltet und auf 25 eingestellt. 
+Danach wurde der Nullpunkt des Polarimeters mit destilliertem Wasser kontrolliert. 
+So soll der Größtfehler des Polarimeters Abgeschätzt werden.
+Anschließend wurden etwa 100 einer Rohrzuckerlösung und etwa 100 einer HCL-Lösung abgefüllt und unabhängig voneinander im Wasserbad auf 25 temperiert. 
+Dann wurden jeweils 25 der HCL-Lösung und der Rohrzuckerlösung in einem Becherglas vermischt. 
+Gleichzeitig wurde die Zeitmessung gestartet. 
+Danach wurde rasch mit einer Pipette genug Flüssigkeit von der Mischung entnommen, um das Polarimeterrohr blasenfrei zu befüllen. 
+Eine Messung dauerte 20, dabei wurden in den ersten 10 alle 30 abgelesen und danach alle 60. 
+Die Messungen wurden für 30 und 35 wiederholt. 
+Für die Messung von wurde zuerst 25 der Messlösung im Wasserbad auf 70 erhitzt und anschließend auf 20 abgekühlt. 
+Danach wurde das Polarimeter blasenfrei mit der Messlösung gefüllt und der Wert für abgelesen.
+
+	Drehwinkel über Zeit bei verschiedenen Temperaturen
+	
+Auswertung
+ spiegelt in unserem Versuch den Drehwinkel wieder, bei dem die Reaktion vollständig abgelaufen ist.
+Nach unserer Methode wurde ein Wert von -3,7 bestimmt.
+Die Messung der Drehwinkel bei den verschiedenen Temperaturen ergab die in Tabelle dargestellten Werte.
+Visualisiert ist hier der Drehwinkel () zu verschiedenen Zeitpunkten der Reaktionen.
+Ausserdem ist der Drehwinkel in Abhängigkeit der Zeit in der Abbildung dargestellt.
+Dessen Linearregression gibt über den Y-Achsenabschnitt den extrapolierten Anfangsdrehwinkel.
+Daraus ergibt sich ein , und .
+Über Gleichung verrechnen wir die bereits erhaltenen Konstanten mit den Rohdaten. Diese werden dann in Abhängigkeit der Zeit dargestellt (Abbildungen , und ). 
+Beispielhaft ist für 
+und nach Gleichung , der linke Term ausgerechnet.
+Dieser Wert wurde dann in Abbildung bei eingetragen. 
+Analog wurde mit den anderen Werten verfahren.
+Ausserdem wird der Drehwinkelfehler mit 0,2 und der Zeitfehler mit 5 bemessen.
+Da es immer eine gewisse Zeit braucht, um den Drehwinkel abzulesen, haben wir auf jeden Zeitwert 5 s addiert. 
+Mit dem angegeben Fehlerwert ergibt sich ein Fehlerbereich von 0 bis +10 s um den eigentlichen Messwert herum.
+Der eingezeichnete Ordinatenfehler errechnet sich nach .
+Beispielhaft ist dies, für , hier Dargestellt:
+
+Mit den Fehlerkreuzen konnten nun die Extremgeraden bestimmen werden.
+Diese sollen aller Fehlerbereiche schneiden.
+In Tabelle sind die Gleichungen der Extremgeraden und Ausgleichsgeraden dargestellt.
+Nach Gleichung wird die logarithmische Reaktionsgeschwindigkeit () in Abhängigkeit von der reziproken Temperatur () dargestellt. 
+Über diesen Datensatz wird eine lineare Regression gelegt.
+Die Steigung ist nach Gleichung gleichzusetzen mit .
+Der Y-Achsenabschnitt ist dann gleich .
+Dargestellt ist dies in Abbildung .
+
+Zuletzt wird über die errechneten Daten, die Halbwertszeiten der Reaktion von den Temperaturen 0, 25, 50 und 100 berechnet.
+Genutzt wird hierfür Gleichung .
+Beispielhaft für ist die Halbwertszeit in Gleichung berechnet.
+Der Fehler der Halbwertszeit wird nach Gleichung berechnet.
+ berechnet sich aus der Mittelwertabweichung der Ordinatenabschnitte der Extremgeraden.
+Während die Mittelwertabweichung der Steigungen der Extremgeraden, geteilt durch die Ideale gaskonstante, ist.
+Beispielhaft ist dies für , und im folgenden gezeigt:
+*
+	Logarithmische Drehwinkel differenzen bei 
+	Rohdaten und dessen Ausgleichsgeraden
+		Visualisierung der Rohdaten und der Logarithmierung des Drehwinkels über die Zeit.
+
+Darstellung der logarithmischen Geschwindigkeitskonstnten über die Reziproke Zeit
+
+		
+Versuchsergebnisse
+
+Zusatzfragen
+
+	Warum heißt die hier vorliegende Reaktion Inversionsreaktion ?
+
+	Eine Inversion beschreibt eine chemische Reaktion, die eine Umkehr von bestimmten Eigenschaften der Edukte gegenüber den Produkten bedeutet. 
+	In der hier vorliegenden Reaktion ändert sich der Drehwinkel. 
+	Saccharose dreht die Ebene des polarisierten Lichtes nach rechts (positiv) und der Invertzucker, bestehend aus Fructose und Glucose, nach links (negativ). 
+	Im Verlauf der Reaktion sinkt die Konzentration von Saccharose und die Konzentration vom Invertzucker nimmt zu.
+
+	Wie ist die optische Aktivität mit der Struktur eines Moleküls in Zusammenhang zu bringen ?
+
+	Die meisten Stoffe sind optisch nicht aktiv.
+	Da für optische Aktivität ein Chirales Zentrum nötig ist.
+	Dies ist der Fall, wenn ein Kohlenstoffatom vier unterschiedliche Liganden hat.
+	Chirale Moleküle können nicht mit dem Spiegelbild in Deckung gebracht werden.
+	Welche Bedeutung hat das Messen von Drehwinkeln für die Aufklärung von Reaktionsmechanismen ?
+
+	Wird eine Änderung des Drehwinkels gemessen, so hat eine änderung der Summe an Drehwinkeln, der Reaktionslösung stattgefunden.
+	In unserem Fall, da wir Edukt und Produkt kennen, kann so auf den Reaktionsfortschritt geschlossen werden.
+	Wie funktioniert ein Polarimeter ?
+
+	Im Polarimeter misst man den Drehwinkel einer Probensubstanz. 
+	Das Licht der Lichtquelle ist linear polarisiert. 
+	Wenn die Probe optisch aktiv (chiral) ist, wird das Licht gebeugt. 
+	Der drehbare Polarisator stellt die Polarisationsebene fest. 
+	Wenn der Drehwinkel des zweiten Polarisationsfilters gleich dem Drehwinkel der Probe entspricht, fällt Licht durch das Polarimeter.
+	Siehe Abbildung .
+
+	Wie wirken sich systematische Fehler bei der Drehwinkelbestimmung auf die erhaltene Werte für und aus ?
+
+	Es hat keine Auswirkung, da sich die Fehler gegenseitig aufheben. 
+
+
+Schematische Darstellung des Aufbaus eines Polarimeters

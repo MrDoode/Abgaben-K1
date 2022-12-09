@@ -1,0 +1,51 @@
+\section{Theoretischer Hintergrund}
+Die Inversionsreaktion von Rohrzucker (Saccharose) wird durch ein Proton katalysiert. 
+Saccharose wird zu Glukose und Fruktose umgesetzt. 
+\begin{equation}
+\schemestart
+\chemname{\chemfig{C_{12}H_{22}O_{11}}}{Saccharose} \arrow{->[$H^+$]}\chemname{\chemfig{C_6H_{12}O_6}}{Glukose} + \chemname{\chemfig{C_6H_{12}O_6}}{Fruktose}
+\schemestop
+\end{equation}
+Die Mischung aus Fruktose und Glukose wird als  Invertzucker bezeichnet. 
+Saccharose und der Invertzucker sind optisch aktiv. 
+Die äquimolare Mischung von Fruktose und Glukose hat in Summe einen kleineren Drehwinkel als die Saccharose. 
+So kann der Reaktionsfortschritt anhand der Verkleinerung des Drehwinkels der Lösung betrachtet werden. 
+Saccharose dreht die Ebene nach rechts (positiv) und der Invertzucker nach links (negativ). 
+Beim arbeiten mit einer verdünnten wässrigen Lösung kann das Wasser als konstant angesehen werden.
+Die Reaktionsgeschwindigkeit $k$ lässt sich mit der Gleichung \ref{eq:ln-alpha} berechnen. 
+Der linke Term wird in Abhängigkeit von der Zeit dargestellt.
+Die Steigung einer Ausgleichsgerade gibt dann die Reaktionsgeschwindigkeitskonstante.
+\begin{equation}
+	\ln \left( \frac{\alpha_0 - \alpha_\infty}{\alpha - \alpha_\infty }\right) = k \cdot t 
+\label{eq:ln-alpha}
+\end{equation}
+Der Fehler dieser Darstellung lässt sich über die Gleichung \ref{eq:dLNalpha} berechnen.
+\begin{equation}
+\Delta \ln \left( \frac{\alpha_0 - \alpha_\infty}{\alpha - \alpha_\infty }\right)  = \sqrt{\left(\frac{\Delta \alpha}{\alpha_0 - \alpha_\infty}\right)^2 +\left(\frac{\Delta \alpha \cdot \left(\alpha_0 -\alpha\right)}{\left(\alpha_\infty - \alpha\right)\cdot \left(\alpha_\infty-\alpha_0\right) }\right)^2 +\left(\frac{\Delta \alpha}{\alpha_\infty - \alpha}\right)^2}  \\
+\label{eq:dLNalpha}
+\end{equation}
+Nach dem Arrhenius-Gesetz lässt sich aus der Änderung der Geschwindigkeitskonstante $k$, mit der Temperatur $T$ die Aktivierungsenergie berechnen, mit:
+\begin{equation}
+\ln (k) = -\frac{E_A}{R} \cdot \left( \frac{1}{T} \right) + \ln (A) \label{eq:EA}
+\end{equation}
+In der Darstellung werden dann die Fehlerkreuze benötigt.
+Diese werden über die Gleichungen \ref{eq:dLNk} und \ref{eq:d1T} berechnet.
+\begin{align}
+\Delta \left(\ln (k)\right)&=\sqrt{\left(\frac{\delta \ln (k)}{\delta k}\cdot \Delta k \right)^2} = \frac{\Delta k}{k} \label{eq:dLNk}\\
+\Delta \left(\frac{1}{T}\right)&=\sqrt{\left(\frac{\delta \frac{1}{T}}{\delta T}\cdot \Delta T \right)^2} = -\frac{\Delta T}{T^2}\label{eq:d1T}
+\end{align}
+Der Fehler für die Aktivierungsenergie und der Geschwindigkeitskonstante wird graphisch ermittelt über die Auswertung die Fehlerkreuze. 
+Zur Bestimmung der Fehler werden jeweils zwei Extremgeraden eingezeichnet, welche jeweils durch $\frac{2}{3}$ der Fehlerboxen verläuft.
+Außerdem wird $t_{1/2}$ mit der Gleichung \ref{eq:t0.5} ermittelt.
+\begin{equation}
+t_{1/2} = \frac{\ln (2)}{k} = \frac{\ln (2)}{A \cdot e^\frac{-E_A}{R\cdot T}}
+\label{eq:t0.5}
+\end{equation}
+Die Fehler der Halbwertzeiten folgen aus der Fehlerfortpflanzung nach Gleichung \ref{eq:dt05}
+\begin{align}
+\Delta t_{1/2} &= \sqrt{\left(\frac{\delta t_{1/2}}{\delta A}\cdot \Delta A\right)^2 + \left(\frac{\delta t_{1/2}}{\delta E_A}\cdot \Delta E_A\right)^2 +\left(\frac{\delta t_{1/2}}{\delta T}\cdot \Delta T \right)^2}\\
+\frac{\delta t_{1/2}}{\delta A} &= - \frac{1}{A^2} \cdot \frac{\ln (2)}{e^{- \frac{E_A}{R \cdot T}}}\\
+\frac{\delta t_{1/2}}{\delta E_A} &= \frac{\ln (2)}{A\cdot R \cdot T\cdot e^{\left(- \frac{E_A}{R \cdot T}\right)}} \\
+\frac{\delta t_{1/2}}{\delta T} &= - \frac{E_A}{R\cdot T^2}\cdot \frac{\ln (2)}{A\cdot e^{\left(- \frac{E_A}{R \cdot T}\right)}}\\
+\Rightarrow \Delta t_{1/2} &= \sqrt{\left(\frac{\ln (2)}{A\cdot e^{- \left(\frac{E_A}{R\cdot T}\right)}}\right)^2 \cdot \left(\left(\frac{\Delta A}{A}\right)^2 + \left(\frac{\Delta E_A}{R\cdot  T}\right)^2 + \left(\frac{E_A \cdot \Delta T}{R\cdot T^2}\right)^2\right)}
+\end{align}

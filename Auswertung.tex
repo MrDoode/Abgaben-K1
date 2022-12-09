@@ -1,0 +1,198 @@
+\begin{wraptable}{l}{0.3\linewidth}
+	\begin{tabular}{l|ccc}
+		\hline
+		t / s & $\alpha_{25}$ & $\alpha_{30}$ & $\alpha_{35}$\\
+		\hline
+		\hline
+5       & -               & -               & -\\
+35      & -               & -               & -\\
+65      & -               & -               & -\\
+95      & 9,55            & -               & -\\
+125     & 9,05            & -               & -\\
+155     & 9,05            & -               & 9,1\\
+185     & 9,25            & 8,85            & 8,95\\
+215     & 9,15            & 8,6             & 8,6\\
+245     & 9,1             & 8,4             & 8,2\\
+275     & 9,15            & 8,1             & 7,85\\
+305     & 9,05            & 8               & 7,85\\
+335     & 8,95            & 7,8             & 7,6\\
+365     & 8,9             & 7,6             & 7,3\\
+395     & 8,9             & 7,3             & 7,15\\
+425     & 8,8             & 7,6             & 6,9\\
+455     & 8,75            & 7,5             & 6,55\\
+485     & 8,7             & 7,3             & 6,3\\
+515     & 8,5             & 7,3             & 6,2\\
+545     & 8,55            & 6,7             & 6\\
+575     & 8,45            & 6,65            & 5,65\\
+605     & 8,4             & 6,35            & 5,4\\
+635     & 8,25            & 6,55            & 5,25\\
+665     & 8,25            & 6,35            & 5,15\\
+695     & 8,2             & 6,05            & 4,95\\
+725     & -               & 6,5             & 4,65\\
+755     & 7,95            & 6,05            & -\\
+785     & -               & -               & 4,45\\
+815     & 7,95            & 5,9             & -\\
+845     & -               & -               & 4,2\\
+875     & 7,8             & 5,75            & -\\
+905     & -               & -               & 3,95\\
+935     & 7,8             & 5,45            & -\\
+965     & -               & -               & 3,8\\
+995     & 7,5             & 5               & -\\
+1025    & -               & -               & 3,25\\
+1055    & 7,55            & 5,35            & -\\
+1085    & -               & -               & 3\\
+1115    & 7,25            & 5,25            & -\\
+1145    & -               & -               & 2,85\\
+1175    & 7,2             & 5,1             & -\\
+1205    & -               & -               & 2,5\\
+1235    & 7               & 4,95            & -\\
+1265    & -               & -               & 2,05\\
+1295    & 6,95            & 4,8             & -\\
+1325    & -               & -               & 1,95\\
+1355    & 6,9             & 4,5             & -\\
+1385    & -               & -               & 1,7\\
+1415    & -               & 4,4             & -\\
+		\hline
+	\end{tabular}
+	\caption{Drehwinkel über Zeit bei verschiedenen Temperaturen}
+	\label{tab:Rohdaten}
+\end{wraptable}
+
+\section{Auswertung}
+$\alpha_\infty$ spiegelt in unserem Versuch den Drehwinkel wieder, bei dem die Reaktion vollständig abgelaufen ist.
+Nach unserer Methode wurde ein Wert von \qty{-3,7}{\degree} bestimmt.
+Die Messung der Drehwinkel bei den verschiedenen Temperaturen ergab die in Tabelle \ref{tab:Rohdaten} dargestellten Werte.
+Visualisiert ist hier der Drehwinkel ($\alpha$) zu verschiedenen Zeitpunkten der Reaktionen.
+Außerdem ist der Drehwinkel in Abhängigkeit der Zeit in der Abbildung \ref{abb:Rohdaten} dargestellt.
+Dessen Linearregression gibt über den Y-Achsenabschnitt den extrapolierten Anfangsdrehwinkel.
+Daraus ergibt sich ein $\alpha_{0(T_{25})} = \qty{9,6}{\degree}$,$\alpha_{0(T_{30})} = \qty{8,9}{\degree}$ und $\alpha_{0(T_{35})} = \qty{9,4}{\degree}$.
+Über Gleichung \ref{eq:ln-alpha} verrechnen wir die bereits erhaltenen Konstanten mit den Rohdaten. Diese werden dann in Abhängigkeit der Zeit dargestellt (Abbildungen \ref{abb:e25}, \ref{abb:e30} und \ref{abb:e35}). 
+Beispielhaft ist für 
+$\alpha_{25}=\qty{9,55}{\degree}$,
+$\alpha_{\infty}=\qty{-3,7}{\degree}$, 
+$\alpha_0=\qty{9,6}{\degree}$ 
+und $t=90\ s$ nach Gleichung \ref{eq:ln-alpha}, der linke Term ausgerechnet.
+Dieser Wert wurde dann in Abbildung \ref{abb:e35} bei $90\ s$ eingetragen. 
+Analog wurde mit den anderen Werten verfahren.
+ 
+\begin{equation}
+	\ln \left( \frac{\qty{9.59}{\degree} -( \qty{-3.7}{\degree})}{\qty{9.55}{\degree} - (\qty{-3.7}{\degree}) }\right) = \qty{3,014e-3}{}
+	\label{eqbsp:ln-aplha}
+\end{equation}
+
+Außerdem wird der Drehwinkelfehler mit \qty{0,2}{\degree} und der Zeitfehler mit \qty{5}{\second} bemessen.
+Da es immer eine gewisse Zeit braucht, um den Drehwinkel abzulesen, haben wir auf jeden Zeitwert 5\ s addiert. 
+Mit dem angegeben Fehlerwert ergibt sich ein Fehlerbereich von 0 bis +10\ s  um den eigentlichen Messwert herum.
+Der eingezeichnete Ordinatenfehler errechnet sich nach \ref{eq:dLNalpha}.
+Beispielhaft ist dies, für $\alpha=\ang{9,55} ,\alpha_0=\ang{9,598}, \alpha_\infty=\ang{-3,7}$,  hier dargestellt:
+\begin{equation}
+\resizebox{0.75\hsize}{!}{$%
+\Delta \ln (K) =\\ \sqrt{
+        \left(\frac{\qty{0.2}{\degree}}{\qty{9.598}{\degree} - (\qty{- 3.7}{\degree})}\right)^2 +
+        \left(\frac{\qty{0.2}{\degree} \cdot \left(\qty{9.598}{\degree} -\qty{9.55}{\degree}\right)}{\left(\qty{- 3.7}{\degree} - \qty{9.55}{\degree}\right)\cdot \left(\qty{- 3.7}{\degree}-\qty{9.598}{\degree} \right) }\right)^2 +
+        \left(\frac{\qty{0.2}{\degree}}{\qty{- 3.7}{\degree} - \qty{9,55}{\degree}}\right)^2 
+        } = 0.021$%
+}%
+\end{equation}
+Mit den Fehlerkreuzen konnten nun die Extremgeraden bestimmen werden.
+Diese sollen $\frac{2}{3}$ aller Fehlerbereiche schneiden.
+In Tabelle \ref{tab:eqnarray} sind die Gleichungen der Extremgeraden und Ausgleichsgeraden dargestellt.
+Nach Gleichung \ref{eq:EA} wird die logarithmische Reaktionsgeschwindigkeit ($k$) in Abhängigkeit von der reziproken Temperatur ($1/T$) dargestellt. 
+Über diesen Datensatz wird eine lineare Regression gelegt.
+Die Steigung ist nach Gleichung \ref{eq:EA} gleichzusetzen mit $\frac{-E_A}{R}$.
+Der Y-Achsenabschnitt ist dann gleich $\ln{(A)}$.
+Dargestellt ist dies in Abbildung \ref{abb:EA}.
+
+\begin{equation}
+	t_{1/2} = \frac{\ln (2)}{\qty{1.85e15}{\per\second} \cdot exp\left(\frac{-\qty{108576,99}{\joule\per\mole}}{8.3144\frac{J}{mol\cdot K}\cdot 298.14\ K}\right)}= \qty{3928,88}{\second}
+\label{eqbsp:t0.5}
+\end{equation}
+
+\newpage
+\clearpage
+
+Zuletzt wird über die errechneten Daten die Halbwertszeiten der Reaktion von den Temperaturen \qty{0}{\degreeCelsius}, \qty{25}{\degreeCelsius}, \qty{50}{\degreeCelsius} und \qty{100}{\degreeCelsius} berechnet.
+Genutzt wird hierfür Gleichung \ref{eq:t0.5}.
+Beispielhaft für $T=273.14\ K$ ist die Halbwertszeit in Gleichung \ref{eqbsp:t0.5} berechnet.
+Der Fehler der Halbwertszeit wird nach Gleichung \ref{eqbsp:dt05} berechnet.
+$\Delta A$ berechnet sich aus der Mittelwertabweichung der Ordinatenabschnitte der Extremgeraden.
+Während $\Delta E_A$ die Mittelwertabweichung der Steigungen der Extremgeraden, geteilt durch die ideale Gaskonstante ist.
+Beispielhaft ist dies für $T=273.14\ K$, $E_A=\qty{108576,99}{\joule\per\mole}$ und $A=\qty{1,85e15}{\per\second}$ im Folgenden gezeigt:
+\begin{eqnarray*}
+\Delta t_{1/2} =\\
+\resizebox{\hsize}{!}{$%
+\sqrt{\left(\frac{\ln (2)}{\qty{1,85e15}{\per\second}\cdot e^{- \left(\frac{\qty{108576,99}{\joule\per\mole}}{\qty{8,31446}{\joule\per\mole\per\kelvin}\cdot \qty{273,14}{\kelvin}}\right)}}\right)^2 \cdot \left(\left(\frac{\qty{13,2}{\per\second}}{\qty{1,85e15}{\per\second}}\right)^2 + \left(\frac{\qty{962,17}{\joule\per\mole}}{\qty{8,314}{\joule\per\mole\per\kelvin}\cdot  \qty{273,14}{\kelvin}}\right)^2 + \left(\frac{\qty{108576,99}{\joule\per\mole} \cdot\qty{1,126}{\kelvin}}{\qty{8,314}{\joule\per\mole\per\kelvin}\cdot (\qty{273,14}{\kelvin})^2}\right)^2\right)}
+$%
+}% 
+\\= \qty{-1,125e-6}{\second}
+\end{eqnarray*}
+\begin{table}[t]
+	\centering
+	\begin{tabular}{l|lll}
+		\hline
+		$T$ 				& obere Extremgerade		& Ausgleichsgerade	& untere Extremgerade\\
+		\hline
+		\hline
+		\qty{25}{\degreeCelsius} 	& $0,00024x-0,0426$ 		& $0,00018x-0,0066$	& $0,00011x+0,0351$\\
+		\qty{30}{\degreeCelsius}	& $0,00041x-0,0522$ 		& $0,00037x-0,0302$ 	& $0,00032x+0$\\
+		\qty{35}{\degreeCelsius}	& $0,00081x-0,1360$ 		& $0,00073x-0,0840$ 	& $0,00065x-0,029$\\
+		\hline
+	\end{tabular}
+	\caption{Geradengleichungen der Reaktionsgeschwindigkeitskonstanten Bestimmung}
+	\label{tab:eqnarray}
+\end{table}
+
+
+\begin{figure}
+\centering
+	\begin{subfigure}{0.4\textwidth}
+	\input{abbT25.tex}
+	\caption{Logarithmische Drehwinkel Differenzen, bei $\qty{25}{\degreeCelsius}$}
+	\label{abb:e25}
+	\end{subfigure}
+\hspace{5mm}	
+	\begin{subfigure}{0.4\textwidth}
+	\input{abbT30.tex}
+	\caption{Logarithmische Drehwinkel Differenzen, bei $\qty{30}{\degreeCelsius}$}
+	\label{abb:e30}
+	\end{subfigure}
+\hfill
+	\begin{subfigure}{0.4\textwidth}
+	\input{abbT35.tex}
+	\caption{Logarithmische Drehwinkel Differenzen, bei $\qty{35}{\degreeCelsius}$}
+	\label{abb:e35}
+	\end{subfigure}
+\hspace{5mm}
+	\begin{subfigure}{0.4\textwidth}
+	\input{abbRohdaten.tex}
+	\caption{Rohdaten und dessen Ausgleichsgeraden}
+	\label{abb:Rohdaten}
+	\end{subfigure}
+\caption{Visualisierung der Rohdaten und der Logarithmierung des Drehwinkels über die Zeit.}
+\end{figure}
+\begin{figure}
+\centering
+\input{abbEA.tex}
+\caption{Darstellung der logarithmischen Geschwindigkeitskonstanten über die reziproke Zeit}
+\label{abb:EA}
+\end{figure}
+
+\begin{table}[b]  
+	\centering
+	\begin{tabular}{l|c}
+\hline
+$\alpha_\infty$ / $^\circ$		& -3,7 		\\	
+$k_{25}$	/\unit{\per\second}	& 0,00018 	\\
+$k_{30}$	/\unit{\per\second}	& 0,00037 	\\
+$k_{35}$	/\unit{\per\second}	& 0,00073 	\\
+$E_A$ 		/\unit{\joule}	 	& 108576	\\
+A 		/\unit{\per\second}	& \qty{1,85e15}{}\\
+$t(T_0)$ 	/\unit{\second}		& \qty{216459,62}{\second}\\
+$t(T_{25)}$ 	/\unit{\second}		& \qty{3928,88}{\second}\\
+$t(T_{50})$ 	/\unit{\second}		& \qty{132,61}{\second}\\
+$t(T_{100})$ 	/\unit{\second}		& \qty{0,59}{\second}\\
+\hline
+	\end{tabular}
+\caption{Versuchsergebnisse}
+\label{tab:ergebnisse}
+\end{table}

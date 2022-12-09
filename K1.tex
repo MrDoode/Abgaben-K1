@@ -1,0 +1,47 @@
+\documentclass[a4paper, 11pt]{article}
+
+\usepackage{fullpage}
+%\usepackage[inline]{showlabels}
+\usepackage{biblatex}
+\usepackage{siunitx}
+\usepackage{wrapfig}
+\usepackage{amsmath}
+\usepackage[german]{babel}
+\usepackage{gnuplot-lua-tikz}
+\usepackage{chemfig}
+\usepackage{subcaption}
+
+\newcommand{\andy}{\qty{2.826e-4}{\per\second}}
+\newcommand{\ea}{\qty{1.02777e6}{\joule\per\mole}}
+\input{import.tex}
+
+\title{Praktikum der physikalischen Chemie\\\large K1 - Aktivierungsenergie der Inversion von Rohrzucker}
+\author{Janosch Ehlers (jaeh@uni-bremen.de)\\Samed Hür (huer@uni-bremen.de)\\\textbf{Betreuerin:} Petra Martinovic (p.martinovic@uni-bremen.de)}
+\date{02.12.22}
+\bibliography{K1.bib}
+
+\begin{document}
+\maketitle
+\thispagestyle{empty}
+\newpage
+
+\thispagestyle{empty}
+\tableofcontents
+\newpage
+\pagenumbering{arabic}
+
+Ziel des Versuches ist es, die Reaktionsgeschwindigkeitskonstante $k$ und die molare Aktivierungsenergie $E_A$ von der Inversionsreaktion von Rohrzucker (Saccharose) zu bestimmen. 
+Mithilfe einer polarimetrischen Messung zur Bestimmung des Drehwinkels. 
+
+\input{Theorie.tex}
+\input{Durchführung.tex}
+
+\newpage
+\input{Auswertung.tex}
+\newpage
+\input{Zusatzfragen.tex}
+
+\nocite{skript}
+
+\printbibliography
+\end{document}
